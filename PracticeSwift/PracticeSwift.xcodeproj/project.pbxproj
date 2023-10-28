@@ -77,6 +77,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D38DF6E42AECBFE9009619C7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D3ADE0F22AE467ED0055E403 /* ContentView.swift */,
+				D360A4D42AE4A7530043B3C0 /* SampleList.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D38DF6E52AECBFF3009619C7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D3ADE0F02AE467ED0055E403 /* PracticeSwiftApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D38DF6E62AECC01B009619C7 /*  Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D3ADE0F62AE467EE0055E403 /* Preview Content */,
+				D3ADE0F42AE467EE0055E403 /* Assets.xcassets */,
+			);
+			path = " Resource";
+			sourceTree = "<group>";
+		};
+		D38DF6E72AECC067009619C7 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		D38DF6E82AECC074009619C7 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D38DF6E92AECC089009619C7 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				D3ADE0F92AE467EE0055E403 /* Persistence.swift */,
+				D3ADE0FB2AE467EE0055E403 /* PracticeSwift.xcdatamodeld */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
 		D3ADE0E42AE467ED0055E403 = {
 			isa = PBXGroup;
 			children = (
@@ -100,13 +149,12 @@
 		D3ADE0EF2AE467ED0055E403 /* PracticeSwift */ = {
 			isa = PBXGroup;
 			children = (
-				D3ADE0F02AE467ED0055E403 /* PracticeSwiftApp.swift */,
-				D3ADE0F22AE467ED0055E403 /* ContentView.swift */,
-				D3ADE0F42AE467EE0055E403 /* Assets.xcassets */,
-				D3ADE0F92AE467EE0055E403 /* Persistence.swift */,
-				D3ADE0FB2AE467EE0055E403 /* PracticeSwift.xcdatamodeld */,
-				D3ADE0F62AE467EE0055E403 /* Preview Content */,
-				D360A4D42AE4A7530043B3C0 /* SampleList.swift */,
+				D38DF6E52AECBFF3009619C7 /* App */,
+				D38DF6E62AECC01B009619C7 /*  Resource */,
+				D38DF6E42AECBFE9009619C7 /* UI */,
+				D38DF6E72AECC067009619C7 /* UseCase */,
+				D38DF6E82AECC074009619C7 /* Domain */,
+				D38DF6E92AECC089009619C7 /* Infrastructure */,
 			);
 			path = PracticeSwift;
 			sourceTree = "<group>";
@@ -433,7 +481,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PracticeSwift/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PracticeSwift/ Resource/Preview Content\"";
 				DEVELOPMENT_TEAM = 9779729U2W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -463,7 +511,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PracticeSwift/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PracticeSwift/ Resource/Preview Content\"";
 				DEVELOPMENT_TEAM = 9779729U2W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
