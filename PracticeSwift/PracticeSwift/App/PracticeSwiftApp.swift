@@ -6,7 +6,7 @@ struct PracticeSwiftApp: App {
 
     var body: some Scene {
         WindowGroup {
-            SampleList()
+            TabsView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
