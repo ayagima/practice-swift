@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		D360A4D52AE4A7530043B3C0 /* SampleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D360A4D42AE4A7530043B3C0 /* SampleList.swift */; };
+		D36CE6DA2AED42C6009B26CF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CE6D92AED42C6009B26CF /* SettingsView.swift */; };
+		D36CE6DC2AED4798009B26CF /* AppPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CE6DB2AED4798009B26CF /* AppPath.swift */; };
+		D36CE6DF2AED5240009B26CF /* PathDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CE6DE2AED5240009B26CF /* PathDestination.swift */; };
+		D36CE6E12AED56C0009B26CF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CE6E02AED56C0009B26CF /* HomeView.swift */; };
 		D38DF6EB2AECC37F009619C7 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38DF6EA2AECC37F009619C7 /* TabsView.swift */; };
 		D38DF6EE2AECC4F3009619C7 /* TabsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38DF6ED2AECC4F3009619C7 /* TabsItemView.swift */; };
 		D38DF6F02AECCF81009619C7 /* MemoFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38DF6EF2AECCF81009619C7 /* MemoFieldView.swift */; };
@@ -41,6 +45,10 @@
 
 /* Begin PBXFileReference section */
 		D360A4D42AE4A7530043B3C0 /* SampleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleList.swift; sourceTree = "<group>"; };
+		D36CE6D92AED42C6009B26CF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D36CE6DB2AED4798009B26CF /* AppPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPath.swift; sourceTree = "<group>"; };
+		D36CE6DE2AED5240009B26CF /* PathDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathDestination.swift; sourceTree = "<group>"; };
+		D36CE6E02AED56C0009B26CF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D38DF6EA2AECC37F009619C7 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
 		D38DF6ED2AECC4F3009619C7 /* TabsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsItemView.swift; sourceTree = "<group>"; };
 		D38DF6EF2AECCF81009619C7 /* MemoFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoFieldView.swift; sourceTree = "<group>"; };
@@ -83,13 +91,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D36CE6D82AED42A8009B26CF /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D36CE6D92AED42C6009B26CF /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		D36CE6DD2AED50B3009B26CF /* Path */ = {
+			isa = PBXGroup;
+			children = (
+				D36CE6DE2AED5240009B26CF /* PathDestination.swift */,
+			);
+			path = Path;
+			sourceTree = "<group>";
+		};
 		D38DF6E42AECBFE9009619C7 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D36CE6DD2AED50B3009B26CF /* Path */,
+				D36CE6D82AED42A8009B26CF /* Settings */,
 				D38DF6EC2AECC4D0009619C7 /* Tabs */,
 				D3ADE0F22AE467ED0055E403 /* ContentView.swift */,
 				D360A4D42AE4A7530043B3C0 /* SampleList.swift */,
 				D38DF6EF2AECCF81009619C7 /* MemoFieldView.swift */,
+				D36CE6E02AED56C0009B26CF /* HomeView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -121,6 +148,7 @@
 		D38DF6E82AECC074009619C7 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				D36CE6DB2AED4798009B26CF /* AppPath.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -334,9 +362,13 @@
 				D38DF6EB2AECC37F009619C7 /* TabsView.swift in Sources */,
 				D3ADE0FA2AE467EE0055E403 /* Persistence.swift in Sources */,
 				D3ADE0F32AE467ED0055E403 /* ContentView.swift in Sources */,
+				D36CE6DA2AED42C6009B26CF /* SettingsView.swift in Sources */,
 				D38DF6F02AECCF81009619C7 /* MemoFieldView.swift in Sources */,
+				D36CE6DF2AED5240009B26CF /* PathDestination.swift in Sources */,
 				D3ADE0FD2AE467EE0055E403 /* PracticeSwift.xcdatamodeld in Sources */,
 				D38DF6EE2AECC4F3009619C7 /* TabsItemView.swift in Sources */,
+				D36CE6DC2AED4798009B26CF /* AppPath.swift in Sources */,
+				D36CE6E12AED56C0009B26CF /* HomeView.swift in Sources */,
 				D3ADE0F12AE467ED0055E403 /* PracticeSwiftApp.swift in Sources */,
 				D360A4D52AE4A7530043B3C0 /* SampleList.swift in Sources */,
 			);
