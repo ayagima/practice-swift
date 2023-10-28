@@ -4,7 +4,7 @@ struct TabsView: View {
     var body: some View {
         TabView {
             TabsItemView({ Text("Home") },
-                         text: "Sample",
+                         text: "Home",
                          systemName: "house")
             TabsItemView({ SampleList() },
                          text: "Sample",
