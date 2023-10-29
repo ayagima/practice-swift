@@ -7,6 +7,9 @@ class PathDestination {
         case .root: HomeView()
         case .sampleList: SampleList()
         case .settings: SettingsView()
+        case .general: Text("一般")
+        case .help: Text("ヘルプ")
+        case .about: Text("このアプリについて")
         }
     }
 }

@@ -2,24 +2,24 @@ import SwiftUI
 
 struct SettingsView: View {
     @State private var path = NavigationPath()
+    private let pathDestination = PathDestination()
     
     var body: some View {
         NavigationStack(path: $path) {
             List {
-                Button("一般") {
-                    path.append(0)
+                Button(AppPath.general.toString) {
+                    path.append(AppPath.general.rawValue)
                 }
-                Button("ヘルプ") {
-                    path.append(1)
+                Button(AppPath.help.toString) {
+                    path.append(AppPath.help.rawValue)
                 }
-                Button("このアプリについて") {
-                    path.append(2)
+                Button(AppPath.about.toString) {
+                    path.append(AppPath.about.rawValue)
                 }
             }
-            .navigationTitle("ホーム")
             .navigationBarTitleDisplayMode(.inline)
             .navigationDestination(for: Int.self, destination: { appended in
-                Text("hoge\(appended)")
+                pathDestination.target(appPath: AppPath(rawValue: appended)!)
             })
         }
     }
