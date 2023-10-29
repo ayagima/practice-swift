@@ -1,8 +1,21 @@
 import SwiftUI
 
 struct SampleList: View {
+    @State private var path = NavigationPath()
+    private let pathDestination = PathDestination()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack(path: $path) {
+            List {
+                Button(AppPath.memo.toString) {
+                    path.append(AppPath.memo.rawValue)
+                }
+            }
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationDestination(for: Int.self, destination: { appended in
+                pathDestination.target(appPath: AppPath(rawValue: appended)!)
+            })
+        }
     }
 }
 

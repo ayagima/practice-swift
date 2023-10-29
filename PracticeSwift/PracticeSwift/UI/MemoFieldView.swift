@@ -1,11 +1,10 @@
 import SwiftUI
 
 struct MemoFieldView: View {
-    @Binding private var text: String
+    @State private var text: String = ""
     private let lineLimit: Int?
     
-    init(_ text: Binding<String>, _ lineLimit: Int? = nil) {
-        self._text = text
+    init(_ lineLimit: Int? = nil) {
         self.lineLimit = lineLimit
     }
     
@@ -25,5 +24,5 @@ struct MemoFieldView: View {
 くぁwせdrftgyふじこlp
 くぁwせdrftgyふじこlp
 """
-    return MemoFieldView(.constant(text))
+    return MemoFieldView()
 }

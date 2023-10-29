@@ -10,6 +10,7 @@ class PathDestination {
         case .general: Text("一般")
         case .help: Text("ヘルプ")
         case .about: Text("このアプリについて")
+        case .memo: MemoFieldView()
         }
     }
 }
